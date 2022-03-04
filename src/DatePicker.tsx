@@ -46,7 +46,7 @@ export const DatePicker: React.FC<IDatePickerParams> = ({
   onChange,
 }) => {
   const [date, setDate] = useState<IDateState>({
-    day: initialDate?.day()?.toString() || NONE,
+    day: initialDate?.date()?.toString() || NONE,
     month: initialDate?.month()?.toString() || NONE,
     year: initialDate?.year()?.toString() || NONE,
   });
